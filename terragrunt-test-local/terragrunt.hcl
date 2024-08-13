@@ -3,8 +3,7 @@ generate "provider" {
   if_exists = "overwrite_terragrunt"
   contents  = <<EOF
 provider "google" {
-  project = "casetext-dr"
-  region  = "us-west1"
+
 }
 EOF
 }
@@ -16,7 +15,7 @@ remote_state {
     if_exists = "overwrite_terragrunt"
   }
   config = {
-    bucket = "ct-tfstate-test-picco"
+    bucket = "<your_gcp_bucket>"
     prefix = "envs/casetext-dr/${path_relative_to_include()}"
   }
 }
