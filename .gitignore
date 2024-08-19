@@ -1,3 +1,6 @@
+# Jupyter Notebook checkpoints
+**/.ipynb_checkpoints/*
+
 # Local pycache directories
 **/__pycache__/*
 **/.pytest_cache/*
